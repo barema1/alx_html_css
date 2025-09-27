@@ -2,12 +2,15 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  margin: 0; 
+  background: #333; 
 }
 
 main {
   display: flex;
   flex-direction: row;
   flex: auto;
+  background: #f9f9f9; 
 }
 
 article {
@@ -15,6 +18,8 @@ article {
   overflow-y: auto;
   padding: 10px;
   background: #fff;
+  border-radius: 5px;
+  border: 1px solid #e4e1e1;
 }
 
 aside {
@@ -26,6 +31,51 @@ aside {
 
 header, footer {
   padding: 15px;
-  background: #ccc;
+  background: #333;
   text-align: center;
+  color: white;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  margin-right: 15px;
+  color: #ff6600;
+}
+
+header ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+  background: #333;
+}
+
+header li {
+  margin-right: 20px;
+  background: none; 
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+  background: none; 
+  padding: 5px 10px; 
+  border-radius: 3px;
+}
+
+header a:hover {
+  background: #444; 
+  text-decoration: underline;
+}
+
+
+article h1, article h2, article h3 {
+  color: #5fa8f1;
+  margin-top: 10px;
+}
+
+article p {
+  margin: 10px 0;
 }
